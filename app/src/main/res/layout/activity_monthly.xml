@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/c56478ece7801f97c6090881079742bb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80ffffff"
+        >
+        <Button
+            android:id="@+id/monthPrevious"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/leftselect"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/monthText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="MonthView"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#464040"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/monthNext"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightselect"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <org.androidtown.diaryapplication.CalendarMonthView
+        android:id="@+id/monthView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>
